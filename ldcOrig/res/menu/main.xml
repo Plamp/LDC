@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Arranger les rayons dans le magasin -->
+    <item
+        android:id="@+id/action_connexion"
+        android:icon="@drawable/rayons"
+        android:menuCategory="secondary"
+        android:showAsAction="always"
+        android:title="@string/action_connexion"
+        android:titleCondensed="Connexion"/>
+    <!-- Elaborer la liste de course -->
+    <item
+        android:id="@+id/action_liste"
+        android:icon="@drawable/liste"
+        android:menuCategory="secondary"
+        android:showAsAction="always"
+        android:title="@string/action_liste"
+        android:titleCondensed="Liste"/>
+    <item
+        android:id="@+id/action_courses"
+        android:icon="@drawable/caddy"
+        android:menuCategory="secondary"
+        android:showAsAction="always"
+        android:title="@string/action_courses"
+        android:titleCondensed="Courses"/>
+    <!-- Faire les courses -->
+
+</menu>
