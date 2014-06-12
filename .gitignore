@@ -15,7 +15,8 @@ local.properties
 .classpath
 .settings/
 .loadpath
-
+# Disable LF normalization for all files
+* -text
 # External tool builders
 .externalToolBuilders/
 
