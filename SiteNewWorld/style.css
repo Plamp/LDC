@@ -8,13 +8,13 @@ html {
 }
 body {
     background-color: #fff;
-    color: #000;
+    color:black;
 	background-image:url(image/background.png);
 	background-repeat:no-repeat;
 	background-position:center;
 	background-size:cover;
 	color:white;
-	min-height:200px;
+	min-height:60px;
 	font-family: "Century Gothic", helvetica, arial, sans-serif;
     font-size: 1.4em; /* equiv 14px */
     line-height: 1.5; /* adapt to your design */
@@ -31,17 +31,30 @@ div.header{
 	color:white;
 	position: absolute;
 	top: 0px;
-	height:10%;
 	width: 100%;
 }
 div.contenu{
 	color:black;
+	max-height:80%;
+	width:65%;
+	/*margin-left:18%;*/
 	min-height:400px;
 	margin-top:5%;
+	/*margin:0;*/
+	overflow: auto;
+	line-height:none;
+
+padding:0;
 }
 table.connexion{
 	color:black;
 	margin-top:3%;
+}
+label.error{
+color:red;
+min-width:100%;
+text-align:left;
+margin-left:4px;	
 }
 .boutonCo{
 	width:200px;
@@ -56,11 +69,37 @@ border-style:solid;
 border-color:black;
 }
 .divApp{
-width:65%;
+width:99%;
 min-height:400px;
 border-style:solid;
 border-width:thin;
 display:none;	
+color:black;
+}
+.liste{
+color:black;
+border-collapse:collapse;
+border-style:solid;
+border-width:thin;	
+}
+.tdListe{
+border-style:solid;                                                                   
+text-align:center;
+border-width:thin;		
+}
+.tableInscrip{
+	color:black;
+	line-height:none;
+	border-spacing:0;
+	margin:0;
+	margin-left:-10px;
+padding:0;
+	
+}
+
+.tdInscript{
+	min-width:160px;
+	height:5px;
 }
 /* font-sizing for content */
 /* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */

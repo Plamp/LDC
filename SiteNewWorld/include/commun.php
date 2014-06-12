@@ -15,7 +15,6 @@ $password=""; //replace with database password
 $db_name="u683437950_dblis"; //replace with database name
 $con=mysql_connect("$host", "$username","$password")or die("cannot connect"); 
 mysql_select_db("$db_name")or die("cannot select DB");
-
 //test de co =
 /*
 echo '<script language="Javascript">
