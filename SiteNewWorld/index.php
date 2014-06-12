@@ -1,5 +1,5 @@
 <?php
-session_destroy();
+if(isset ($_SESSION["idUtilisateur"]))session_destroy();
 session_start();
 include("include/commun.php");
 if(isset($_POST["connexion"])&& $_POST["connexion"]=="Valider")

@@ -1,15 +1,31 @@
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" media="all"
-      href="style.css" />
 <title>New World</title>
+<?php
+require_once 'Mobile-Detect-2.8.0/Mobile_Detect.php';
+$detect = new Mobile_Detect;
+
+if ( $detect->isMobile() ){
+?> <link rel="stylesheet" type="text/css" media="all" href="style-mobile.css" /> <?php
+}
+else{
+?>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" /> <?php
+}
+?>
+
 <script>
 	var num_div = 3;
-	function showdiv( num ) {
-		for (var i=1;i<=num_div;i++) {
-			if (i == num ) {
+	function showdiv( num ) 
+	{
+		for (var i=1;i<=num_div;i++) 
+		{
+			if (i == num ) 
+			{
 				document.getElementById("contenu_" + i).style.display ="block";
-			} else {
+			} 
+			else 
+			{
 				document.getElementById("contenu_" + i).style.display ="none";
 			}
 		}
@@ -32,4 +48,3 @@ $(document).ready(function() {
 <br /> 
 <hr>
 </div>
-
